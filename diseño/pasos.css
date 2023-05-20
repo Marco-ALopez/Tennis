@@ -1,14 +1,14 @@
 body {
-    background-color: rgb(202, 153, 248);
+    background-color: rgb(129, 11, 241);
 }
 h1 { /*titulo de los temas principales de paginas importantes*/
     background-color: rgb(166, 226, 142);
     text-align: center ;
     width: 100%;
-    color: rgb(116, 126, 120);
+    color: rgb(26, 33, 29);
     font-family:'Times New Roman', Times, serif;
     font-size: 100%;
-    border: 2px solid blue;
+    border: 1px solid blue;
     border-radius: 50px;
 }
 .nav { /*barra de navegación*/ /*caja*/
@@ -93,42 +93,42 @@ h1 { /*titulo de los temas principales de paginas importantes*/
     text-align: center;
 }
 /*al footer ya no supe como hacerle solo quería que se quedara sujetado en la parte de abajo*/
-footer {
+.recor {
     background-color:rgb(224, 193, 155) ;
-    text-align: center;
-    width: 100%;
-    height: 10%;
-    display: inline-flex;
+    display: flex;
     flex-direction:row;
+    text-align: center;
     justify-content: space-evenly;
     align-items: center;
-}
-.records div {
-    border: solid 3px #2be277;
-    padding: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.records a {
-    text-decoration: none;
-    color: black;
-}
-.records img {
-    display: flex;
     width: 100%;
 }
-/*hice lo que pude prof y tutores jeje muchas gracias :)*/
+.recor .records {
+    background-color: aliceblue;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3px;
+    width: 30%;
+}
+.recor .records a {
+    text-decoration: none;
+    color: rgb(50, 77, 213);
+} 
+.recor .records img {
+    width: 30%;
+}
 
 
 
 @media screen and (max-width:422px){
     /*empezando a trabajar con grillas*/
     .nav {
-        display: grid;
-
+        display: inline-block;
+        
     }
     .nav nav ul {
         
-        flex-direction: column;
+        flex-direction: row;
     }
-
+    
 } 
+/*hice lo que pude prof y tutores jeje muchas gracias :)*/
