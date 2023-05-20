@@ -1,7 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}    
 body {
     background-color: rgb(129, 11, 241);
 }
-h1 { /*titulo de los temas principales de paginas importantes*/
+.nav h1 { /*titulo de los temas principales de paginas importantes*/
     background-color: rgb(166, 226, 142);
     text-align: center ;
     width: 100%;
@@ -13,6 +17,7 @@ h1 { /*titulo de los temas principales de paginas importantes*/
 }
 .nav { /*barra de navegación*/ /*caja*/
     background-color: darkseagreen;
+    align-items: center;
     width: 100%;
 }
 .nav nav ul { /*barra de navegacion*/
@@ -79,23 +84,49 @@ h1 { /*titulo de los temas principales de paginas importantes*/
     font-weight: 900;
     text-align: center;
 }
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .card {
     background-color: blue;
-    text-align: center;
-    width: 15rem;
-}
-.card__img {
-    border: 3px solid grey;
-    margin: auto;
+    width: 13rem;
+    margin: 1rem;
+    padding: .8rem;
+    border-radius: 16px;
 }
 .card__tittle, .card__description {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.card__button{
-    background-color: burlywood;
+.card .card__img {
+
+    width: 100%;
+}
+.card .price {
+    display: flex;
+    justify-content: space-between;
+}
+.card .price a {
+    border: 2px solid black;
+    background-color: brown;
+    border-radius: 10px;
+}
+.ingreso {
+    background-color: chocolate;
+    display: inline-block;
+    margin: 3rem;
+}
+.imgini {
     text-align: center;
+    margin: 5rem;
 }
-/*al footer ya no supe como hacerle solo quería que se quedara sujetado en la parte de abajo*/
+.imgini img {
+    width: 100%;
+}
 .recor {
     background-color:rgb(224, 193, 155) ;
     display: flex;
