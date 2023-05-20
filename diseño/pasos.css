@@ -64,12 +64,15 @@ h1 { /*titulo de los temas principales de paginas importantes*/
 .contact .contactclient{
     border: none;
     background-color: #2be277;
-    width: 100%;
+    border-radius: 15px;
+    width: 8%;
     padding: 5px;
+    margin: 1rem;
 }
 .contact .contactclient a {
     text-decoration: none;
     color: black;
+    width: 100%;
 }
 .pay {
     background-color: rgb(235, 200, 82);
@@ -119,6 +122,13 @@ h1 { /*titulo de los temas principales de paginas importantes*/
 
 
 
+@media screen and (max-width:720px) {
+    .contact .contactclient{
+        width: 12%;
+    }
+}
+
+
 @media screen and (max-width:422px){
     /*empezando a trabajar con grillas*/
     .nav {
@@ -129,6 +139,8 @@ h1 { /*titulo de los temas principales de paginas importantes*/
         
         flex-direction: row;
     }
-    
+    .contact .contactclient{
+        width: 40%;
+    }
 } 
 /*hice lo que pude prof y tutores jeje muchas gracias :)*/
