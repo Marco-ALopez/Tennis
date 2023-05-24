@@ -5,20 +5,32 @@
 body {
     background-color: rgb(129, 11, 241);
 }
-.nav h1 { /*titulo de los temas principales de paginas importantes*/
-    background-color: rgb(166, 226, 142);
-    text-align: center ;
-    width: 100%;
-    color: rgb(26, 33, 29);
-    font-family:'Times New Roman', Times, serif;
-    font-size: 100%;
-    border: 1px solid blue;
-    border-radius: 50px;
-}
 .nav { /*barra de navegación*/ /*caja*/
     background-color: darkseagreen;
     align-items: center;
     width: 100%;
+}
+.nav .gradiente { /*titulo de los temas principales de paginas importantes*/
+    background-color: rgb(33, 43, 225);
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+    color: rgb(153, 188, 168);
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 30px;
+    background-image: linear-gradient(39deg, blue, green, red, yellow) ;
+}
+.nav .gradiente .sub {
+    transition: 3s;
+    display: none;
+}
+
+.nav .gradiente .sub .subnav li{
+    background-color: #2be277;
+}
+.gradiente:hover> .sub {
+    display: flex;
+
 }
 .nav nav ul { /*barra de navegacion*/
     display: flex;
@@ -27,9 +39,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
+    font-size: 1.5rem;
 }
 .nav nav ul li{
     background-color: aqua;
@@ -51,11 +61,11 @@ body {
     width: 100%;
     justify-content: center;
 }
-.subnav article{
+.mate article{
     background-color: #2be277;
     text-align: center;
 }
-.subnav article section div {
+.mate article section div {
     margin: auto;
 }
 .contact {
@@ -122,10 +132,10 @@ body {
 }
 .imgini {
     text-align: center;
-    margin: 5rem;
+    margin: 1rem;
 }
 .imgini img {
-    width: 100%;
+    width: 50%;
 }
 .recor {
     background-color:rgb(224, 193, 155) ;
