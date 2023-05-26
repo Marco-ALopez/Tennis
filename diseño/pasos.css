@@ -24,12 +24,11 @@ body {
     transition: 3s;
     display: none;
 }
-
 .nav .gradiente .sub .subnav li{
     background-color: #2be277;
 }
 .gradiente:hover> .sub {
-    display: flex;
+    display: inline;
 
 }
 .nav nav ul { /*barra de navegacion*/
@@ -52,13 +51,42 @@ body {
     color: black;
     padding: .5rem;
 }
-.subtitle { 
+.mate .subtitle { 
     background-color: aqua;
     text-align: center;
 }
+.mate .propri {
+    display:grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+    "titulo  titulo img"
+    "parrafo  parrafo img"
+    "...  call  img";
+    margin: 8%;
+}
+.mate .propri .propri__tittle {
+    grid-area: titulo;
+    background-color: aqua;
+    font-size: 5rem;
+}
+.mate .propri .propri__parrafo {
+    grid-area: parrafo;
+    background-color: bisque;
+}
+.mate .propri .propri__img {
+    grid-area: img;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.mate .propri .propri__button{
+    grid-area: call;
+    padding: 1rem;
+}
 .video {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
 }
 .mate article{
@@ -129,6 +157,13 @@ body {
     background-color: chocolate;
     display: inline-block;
     margin: 3rem;
+}
+.butingres input{
+    display: block;
+    border: none;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: aquamarine;
 }
 .imgini {
     text-align: center;
