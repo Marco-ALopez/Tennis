@@ -62,13 +62,13 @@ body {
     grid-template-areas: 
     "titulo  titulo img"
     "parrafo  parrafo img"
-    "...  call  img";
+    "call  ...  img";
     margin: 8%;
 }
 .mate .propri .propri__tittle {
     grid-area: titulo;
     background-color: aqua;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .mate .propri .propri__parrafo {
     grid-area: parrafo;
@@ -82,7 +82,10 @@ body {
 }
 .mate .propri .propri__button{
     grid-area: call;
+    background-color: chartreuse;
+    border: none;
     padding: 1rem;
+    margin: 4rem;
 }
 .video {
     display: flex;
@@ -196,7 +199,9 @@ body {
     width: 30%;
 }
 
-
+@media screen and (max-width:896) {
+    
+}
 
 @media screen and (max-width:720px) {
     .contact .contactclient{
