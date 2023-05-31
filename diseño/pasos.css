@@ -20,12 +20,24 @@ body {
     border-radius: 30px;
     background-image: linear-gradient(39deg, blue, green, red, yellow) ;
 }
+.nav .gradiente:hover {
+    animation-name: tema;
+    animation-duration: .6s;
+}
+@keyframes tema {
+    50% {
+        transform: scale(.9);
+    }
+}
 .nav .gradiente .sub {
     transition: 3s;
     display: none;
 }
 .nav .gradiente .sub .subnav li{
-    background-color: #2be277;
+    background-color: aqua;
+}
+.nav .gradiente .subnav li:hover {
+    background-color: #3c72e7;
 }
 .gradiente:hover> .sub {
     display: inline;
@@ -45,6 +57,11 @@ body {
     border-radius: 15px;
     margin:.2rem;
     display: inline;
+    transition: .5s;
+}
+.nav nav ul li:hover {
+    background-color: #3c72e7;
+    transform: scale(1.1);
 }
 .nav nav ul li a {
     text-decoration: none;
@@ -63,7 +80,9 @@ body {
     "titulo  titulo img"
     "parrafo  parrafo img"
     "call  ...  img";
-    margin: 8%;
+    margin: 5%;
+    align-items: center;
+    justify-items: center;
 }
 .mate .propri .propri__tittle {
     grid-area: titulo;
@@ -74,7 +93,7 @@ body {
 .mate .propri .propri__parrafo {
     grid-area: parrafo;
     background-color: bisque;
-    width: 100%;
+    font-size: 2rem;
 }
 .mate .propri .propri__img {
     grid-area: img;
@@ -89,7 +108,7 @@ body {
     width: min-content;
     height: min-content;
     padding: 1rem;
-    margin: 4rem;
+    font-size: 1.3rem;
 }
 .video {
     display: flex;
@@ -97,7 +116,7 @@ body {
     justify-content: center;
 }
 .mate article{
-    background-color: #2be277;
+    background-color: #e22bb4be;
     text-align: center;
 }
 .mate article section div {
@@ -126,7 +145,7 @@ body {
 }
 .pay {
     background-color: rgb(235, 200, 82);
-    font-weight: 900;
+    font-size: 1.4rem;
     text-align: center;
 }
 .products {
@@ -163,6 +182,7 @@ body {
 .ingreso {
     background-color: chocolate;
     display: inline-block;
+    font-size: 1rem;
     margin: 3rem;
 }
 .butingres button{
@@ -171,6 +191,7 @@ body {
     padding: .6rem;
     margin: 2rem;
     background-color: aquamarine;
+    font-size: 1.5rem;
 }
 .imgini {
     text-align: center;
@@ -203,9 +224,6 @@ body {
     width: 30%;
 }
 
-@media screen and (max-width:896) {
-    
-}
 
 @media screen and (max-width:720px) {
     .contact .contactclient{
