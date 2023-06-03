@@ -81,6 +81,8 @@ body {
     "parrafo  parrafo img"
     "call  ...  img";
     margin: 5%;
+    padding: 1rem;
+    border-radius: 10px;
     align-items: center;
     justify-items: center;
 }
@@ -89,6 +91,7 @@ body {
     text-align: center;
     background-color: aqua;
     font-size: 4rem;
+    width: 100%;
 }
 .mate .propri .propri__parrafo {
     grid-area: parrafo;
@@ -105,10 +108,11 @@ body {
     grid-area: call;
     background-color: chartreuse;
     border: none;
-    width: min-content;
+    border-radius: 20px;
     height: min-content;
+    margin:auto;
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .video {
     display: flex;
@@ -238,6 +242,9 @@ body {
         "parrafo"
         "call";
     }
+    .mate .propri .propri__tittle {
+        font-size: 3.8rem;
+    }
 }
 
 
@@ -254,5 +261,8 @@ body {
     .contact .contactclient{
         width: 40%;
     }
-} 
+    .mate .propri .propri__tittle {
+        font-size: 3rem;
+    }
+}
 /*hice lo que pude prof y tutores jeje muchas gracias :)*/
